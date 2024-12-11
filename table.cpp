@@ -7,7 +7,7 @@ void Cybrom (int a , int b )
     {
         return;
     }
-    cout<<a*b<<"\t";
+    cout<<a*b<<"\n";
 
     Cybrom(a,b+1);
 }
