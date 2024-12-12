@@ -1,23 +1,35 @@
 #include<iostream>
 using namespace std;
-void cybrom( int a, int b) 
-{
- 
- if(a>5)
- {
+int fact (int a)
+{ 
+    if(a==0)  
+    {
 
-    return;
+        return 1;
+    }
 
- }
- 
-cout<<a*b<<"\t";
-
-    Cybrom(a,b-1);
-}
+        return (a*fact(a-1));
 
 
-int a;
+    }
 
-cout<<"enter the factorial number\n";
+    int main()
+    {
+
+        int a;
+
+        cout << "enter any no for factorial\n";
+
+        cin>>a;
+
+        cout<<fact(a);
+    }
+
+
+
+
+
+
+
 
 
